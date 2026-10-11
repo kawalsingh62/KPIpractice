@@ -1,0 +1,24 @@
+{
+	"name": "ls_sql",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "kpisqlaerver.database.windows.net",
+			"database": "kpisqldb",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "kpiadmin",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "ls_akv",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "kpi-sql-db-secrets"
+			}
+		}
+	}
+}
