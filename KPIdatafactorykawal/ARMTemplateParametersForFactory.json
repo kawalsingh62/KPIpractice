@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "KPIdatafactorykawal"
+		},
+		"ls_adls_accountKey": {
+			"value": ""
+		},
+		"ls_adls_properties_typeProperties_url": {
+			"value": "https://kpistoragek.dfs.core.windows.net/"
+		},
+		"ls_akv_properties_typeProperties_baseUrl": {
+			"value": "https://kpikeyvaultk.vault.azure.net/"
+		},
+		"ls_sql_properties_typeProperties_server": {
+			"value": "kpisqlaerver.database.windows.net"
+		},
+		"ls_sql_properties_typeProperties_database": {
+			"value": "kpisqldb"
+		},
+		"ls_sql_properties_typeProperties_userName": {
+			"value": "kpiadmin"
+		}
+	}
+}
