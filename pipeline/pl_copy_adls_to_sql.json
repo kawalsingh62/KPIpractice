@@ -87,8 +87,7 @@
 									"upsertSettings": {
 										"useTempDB": true,
 										"keys": [
-											"@item().key_column_for_upsert",
-											""
+											"@item().key_column_for_upsert"
 										]
 									},
 									"sqlWriterUseTableLock": false,
